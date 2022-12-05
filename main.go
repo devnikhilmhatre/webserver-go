@@ -33,6 +33,6 @@ func main() {
 	http.HandleFunc("/hello", Hello)
 	http.HandleFunc("/form", Form)
 	http.HandleFunc("/flow-chart-diagram", FlowChartDiagram)
-
+	fmt.Println("Server started at port :8080")
 	http.ListenAndServe(":8080", nil)
 }
